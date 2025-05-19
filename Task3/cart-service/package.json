@@ -1,0 +1,17 @@
+{
+  "name": "cart-service",
+  "version": "1.0.0",
+  "description": "Cart Service for ShopFast application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "redis": "^3.1.2",
+    "util": "^0.12.4",
+    "axios": "^0.21.4",
+    "express-session": "^1.17.2",
+    "connect-redis": "^6.0.0"
+  }
+}
