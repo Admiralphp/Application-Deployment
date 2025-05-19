@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="product-form">
+    <h2>Ajouter un nouveau produit</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label for="name">Nom du produit:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Prix:</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantité:</label>
+            <input type="number" id="quantity" name="quantity" min="0" required>
+        </div>
+        <button type="submit">Ajouter</button>
+    </form>
+</section>
+{% endblock %}
